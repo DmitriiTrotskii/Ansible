@@ -34,4 +34,4 @@ RUN ansible-config init --disabled > ${ANSIBLE_HOME}/ansible.cfg && \
     echo "UserKnownHostsFile=/dev/null" >> $(find /etc -iname ssh_config) && \
     git config --global http.sslVerify false
 
-CMD ["/bin/sh"]
+CMD ["/sbin/init"]
