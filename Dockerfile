@@ -33,3 +33,5 @@ RUN ansible-config init --disabled > ${ANSIBLE_HOME}/ansible.cfg && \
     echo "StrictHostKeyChecking no" >> $(find /etc -iname ssh_config) && \
     echo "UserKnownHostsFile=/dev/null" >> $(find /etc -iname ssh_config) && \
     git config --global http.sslVerify false
+
+CMD ["/bin/sh"]
