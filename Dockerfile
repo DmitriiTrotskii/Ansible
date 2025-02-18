@@ -1,4 +1,4 @@
-FROM alpine:3.18
+FROM alpine:3.21
 
 LABEL mainteiner="Dmitrii Trotskii"
 LABEL email="dmitrii.trotskii@gmail.com"
