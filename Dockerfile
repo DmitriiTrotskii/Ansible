@@ -33,4 +33,6 @@ RUN echo "StrictHostKeyChecking no" >> $(find /etc -iname ssh_config) && \
 
 RUN git config --global http.sslVerify false
 
+WORKDIR ${ANSIBLE_HOME}
+
 CMD ["/sbin/init"]
